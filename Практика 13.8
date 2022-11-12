@@ -1,0 +1,13 @@
+tickets = int(input('Введите количество билетов:'))
+price = 0
+for i in range(tickets):
+    age = int(input('Сколько вам лет:'))
+    if 0 < age < 18:
+        price = price+0
+    elif 18 <= age < 24:
+        price = price+990
+    else:
+        price = price+1390
+if tickets > 3:
+    price = price * 0.9
+print(str(price), 'рублей')
